@@ -121,11 +121,11 @@ function iniciando(){
   load.classList.remove("hidden");
 }
 
-
 /* Validamos email */
 function validarEmail (mail) {
+  console.log(re.test(mail));
   let u = datos.find(element => element.email === mail);
-  if (u && re){
+  if (u && re.test(mail)){
     usuario.mail = u.email;
     usuario.name = u.name;
     return true;
