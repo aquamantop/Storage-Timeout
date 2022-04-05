@@ -137,7 +137,7 @@ function validarPassword (mail, pass){
   let u = datos.find(element => element.email === mail);
   if (u.password === pass && pass.length > 4){
     return true;
-  } else false;
+  } else return false;
 };
 
 /* Funcion de error */
